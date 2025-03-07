@@ -1,10 +1,10 @@
-/**
- * PROJECT :
- * PASSWORD GENERATOR
- * Functionalities : generate random password ,
- *  numbers or characters add or remove ,
- * copy to clipboard
- */
+// /**
+//  * PROJECT :
+//  * PASSWORD GENERATOR
+//  * Functionalities : generate random password ,
+//  *  numbers or characters add or remove ,
+//  * copy to clipboard
+//  */
 
 import { useState, useCallback, useEffect, useRef } from "react";
 
@@ -33,16 +33,16 @@ function App() {
     setPassword(pass);
   }, [length, numberAllowed, charsAllowed, setPassword]);
 
-  //copyToclipboard functionality
+  //copyToClipboard functionality
   const copyToClipboard = useCallback(() => {
     passwordRef.current?.select();
     window.navigator.clipboard.writeText(password);
   }, [password]);
 
   //call passwordGenerator on the base of given dependencies
-  useEffect(() => {
-    passwordGenerator();
-  }, [length, numberAllowed, charsAllowed, passwordGenerator]);
+useEffect(() => {
+  passwordGenerator();
+}, [length, numberAllowed, charsAllowed, passwordGenerator]);
 
   return (
     <>
@@ -51,7 +51,6 @@ function App() {
         <div id="password-gen">
           <h2>Generate Password</h2>
           <div id="password-show">
-            
             <input
               type="text"
               placeholder="Password"
@@ -59,11 +58,10 @@ function App() {
               readOnly
               ref={passwordRef}
             />
-           
+
             <button onClick={copyToClipboard}>copy</button>
           </div>
           <div id="selectors">
-            
             <label>Length: {length}</label>
             <input
               type="range"
@@ -74,7 +72,7 @@ function App() {
                 setLength(e.target.value);
               }}
             />
-            
+
             <label>Number</label>
             <input
               type="checkbox"
@@ -84,7 +82,7 @@ function App() {
                 setNumberAllowed((prev) => !prev);
               }}
             />
-           
+
             <label>Characters</label>
             <input
               type="checkbox"
