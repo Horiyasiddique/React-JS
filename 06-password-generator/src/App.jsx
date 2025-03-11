@@ -18,6 +18,7 @@ function App() {
   //useRef hook
   const passwordRef = useRef(null);
 
+
   //paswordGenerator function
   const passwordGenerator = useCallback(() => {
     let pass = "";
