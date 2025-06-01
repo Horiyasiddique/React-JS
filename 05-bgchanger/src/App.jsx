@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 /**
- * PROJECT : 
+ * PROJECT :
  * A background color changer use useState hook to change in state
  */
 function App() {
