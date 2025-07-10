@@ -1,5 +1,13 @@
-import { Envelope, MapPin, Phone } from "../index";
-import { FaTwitter, FaInstagram, FaGithub, FaLinkedin } from "react-icons/fa";
+import {
+  FaTwitter,
+  FaInstagram,
+  FaGithub,
+  FaLinkedin,
+  FaPhoneAlt,
+  FaMapPin,
+  FaEnvelope,
+} from "react-icons/fa";
+import { GrConnect } from "react-icons/gr";
 
 const Contact = () => {
   return (
@@ -88,7 +96,7 @@ const Contact = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="bg-[#F7F7F7] p-6 rounded-lg flex items-start space-x-4">
-              <Envelope className="w-6 h-6 mt-1 text-[#FF5A5F] flex-shrink-0" />
+              <FaEnvelope className="mt-1 text-[#FF5A5F]" />
               <div>
                 <h3 className="font-bold text-[#1A1A1A] mb-1">Email</h3>
                 <p className="text-[#1A1A1A]/70">hello@minimalblog.com</p>
@@ -96,7 +104,7 @@ const Contact = () => {
             </div>
 
             <div className="bg-[#F7F7F7] p-6 rounded-lg flex items-start space-x-4">
-              <Phone className="w-6 h-6 mt-1 text-[#00B4D8] flex-shrink-0" />
+              <FaPhoneAlt className="mt-1 text-[#00B4D8]" />
               <div>
                 <h3 className="font-bold text-[#1A1A1A] mb-1">Phone</h3>
                 <p className="text-[#1A1A1A]/70">+1 (555) 123-4567</p>
@@ -104,7 +112,7 @@ const Contact = () => {
             </div>
 
             <div className="bg-[#F7F7F7] p-6 rounded-lg flex items-start space-x-4">
-              <MapPin className="w-6 h-6 mt-1 text-[#FF5A5F] flex-shrink-0" />
+              <FaMapPin className="mt-1 text-[#FF5A5F]" />
               <div>
                 <h3 className="font-bold text-[#1A1A1A] mb-1">Address</h3>
                 <p className="text-[#1A1A1A]/70">
@@ -113,8 +121,11 @@ const Contact = () => {
               </div>
             </div>
 
-            <div className="bg-[#F7F7F7] p-6 rounded-lg">
-              <h3 className="font-bold text-[#1A1A1A] mb-3">Social Media</h3>
+            <div className="bg-[#F7F7F7] p-6 rounded-lg flex flex-col items-start ">
+              <div className="flex gap-2">
+                <GrConnect className="mt-1 text-[#00B4D8]" />
+                <h3 className="font-bold text-[#1A1A1A] mb-3">Social Media</h3>
+              </div>
               <div className="flex space-x-4">
                 <FaTwitter className="text-xl text-slate-600 cursor-pointer hover:text-red-400 hover:scale-110" />
                 <FaInstagram className="text-xl text-slate-600 cursor-pointer hover:text-red-400 hover:scale-110" />

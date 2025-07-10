@@ -56,7 +56,6 @@ const BlogPost = () => {
     );
   }
 
-  // Safely get tags - handle cases where tag_list might be missing or not an array
   const tags = Array.isArray(post.tag_list) ? post.tag_list : [];
 
   return (

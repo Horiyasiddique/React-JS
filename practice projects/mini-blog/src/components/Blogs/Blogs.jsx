@@ -34,36 +34,28 @@ const Blogs = () => {
   }
 
   return (
-    <div className="min-h-screen bg-white">
-      {/* Hero Section (Consistent with other pages) */}
-      <section className="relative py-20 px-4 sm:px-6 lg:px-8 bg-[#F7F7F7]">
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-8">
-          <div className="md:w-1/2 space-y-6">
-            <h1 className="text-4xl sm:text-5xl font-bold text-[#1A1A1A]">
-              Discover <span className="text-[#FF5A5F]">Stories</span>
-            </h1>
-            <p className="text-lg text-[#1A1A1A]/80">
-              Raw, unfiltered tech tales and life lessons from developers who've
-              been there.
-            </p>
-            <div className="flex gap-2 flex-wrap">
-              {["JavaScript", "React", "Life", "Coding"].map((tag) => (
-                <span
-                  key={tag}
-                  className="text-sm px-3 py-1 rounded-full bg-[#FF5A5F]/10 text-[#FF5A5F]"
-                >
-                  #{tag}
-                </span>
-              ))}
-            </div>
-          </div>
-          <div className="md:w-1/2">
-            <img
-              src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
-              alt="Person writing in notebook"
-              className="rounded-xl shadow-lg w-full h-64 md:h-80 object-cover"
-            />
-          </div>
+    <div className="min-h-screen bg-white pt-24 pb-12 px-4 sm:px-6 lg:px-8">
+      {/* Hero Section*/}
+      <section className="max-w-7xl mx-auto text-center">
+        <div className="mb-12">
+          <span className="inline-block bg-[#FF5A5F]/10 text-[#FF5A5F] px-4 py-2 rounded-full text-sm font-semibold mb-6">
+            Raw Stories
+          </span>
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-[#1A1A1A] mb-6">
+            Discover. <span className="text-[#00B4D8]">Stories</span>.
+          </h1>
+          <p className="text-lg text-[#1A1A1A]/80 max-w-3xl mx-auto leading-relaxed">
+            Raw, unfiltered tech tales and life lessons from developers who've
+            been there.
+          </p>
+        </div>
+
+        <div className="relative mb-16">
+          <img
+            src="https://images.pexels.com/photos/262508/pexels-photo-262508.jpeg"
+            alt="Blogging workspace"
+            className="rounded-xl shadow-lg w-full max-w-4xl mx-auto border-4 border-white"
+          />
         </div>
       </section>
 

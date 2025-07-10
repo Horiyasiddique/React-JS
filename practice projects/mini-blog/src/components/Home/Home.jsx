@@ -1,5 +1,8 @@
 import { Link } from "react-router-dom";
-import {BookOpen, Sparkles, PencilSquare} from "../index"
+import { HiOutlineSparkles } from "react-icons/hi2";
+import { BsPencilSquare } from "react-icons/bs";
+import { FaBookOpen } from "react-icons/fa";
+import Card from "../Card/Card";
 
 const Home = () => {
   return (
@@ -25,7 +28,7 @@ const Home = () => {
             alt="Blogging workspace"
             className="rounded-xl shadow-lg w-full max-w-4xl mx-auto border-4 border-white"
           />
-          <Sparkles className="absolute -top-6 -right-6 w-24 h-24 text-[#FF5A5F]" />
+          <HiOutlineSparkles className="absolute -top-6 -right-6 w-24 h-24 text-[#FF5A5F]" />
         </div>
 
         <Link
@@ -38,35 +41,32 @@ const Home = () => {
 
       {/* Features Grid */}
       <section className="max-w-7xl mx-auto mt-24 grid grid-cols-1 md:grid-cols-3 gap-8">
-        <div className="bg-[#F7F7F7] p-8 rounded-xl text-center hover:translate-y-2 transition-transform">
-          <PencilSquare className="w-12 h-12 mx-auto text-[#00B4D8] mb-4" />
-          <h3 className="text-xl font-bold text-[#1A1A1A] mb-3">Raw Stories</h3>
-          <p className="text-[#1A1A1A]/70">
-            No AI-generated corporate nonsense. Just human messiness you can
-            laugh at.
-          </p>
-        </div>
+        <Card
+          title={"Raw Stories"}
+          description={
+            "No AI-generated corporate nonsense. Just human messiness you can laugh at."
+          }
+          icon={BsPencilSquare}
+          iconClassName={"text-[#00B4D8]"}
+        />
 
-        <div className="bg-[#F7F7F7] p-8 rounded-xl text-center hover:translate-y-2 transition-transform">
-          <BookOpen className="w-12 h-12 mx-auto text-[#FF5A5F] mb-4" />
-          <h3 className="text-xl font-bold text-[#1A1A1A] mb-3">
-            5-Minute Reads
-          </h3>
-          <p className="text-[#1A1A1A]/70">
-            Perfect for bathroom breaks or avoiding small talk at parties.
-          </p>
-        </div>
+        <Card
+          title={"5-Minute Read"}
+          description={
+            "No AI-generated corporate nonsense. Just human messiness you can laugh at."
+          }
+          icon={FaBookOpen}
+          iconClassName={"text-[#FF5A5F]"}
+        />
 
-        <div className="bg-[#F7F7F7] p-8 rounded-xl text-center hover:translate-y-2 transition-transform">
-          <Sparkles className="w-12 h-12 mx-auto text-[#00B4D8] mb-4" />
-          <h3 className="text-xl font-bold text-[#1A1A1A] mb-3">
-            Zero Pretension
-          </h3>
-          <p className="text-[#1A1A1A]/70">
-            We won't tell you to "live your best life" or drink more kale
-            smoothies.
-          </p>
-        </div>
+        <Card
+          title={"Zero Presentation"}
+          description={
+            "We won't tell you to live your best life or drink more kale smoothies."
+          }
+          icon={HiOutlineSparkles}
+          iconClassName={"text-[#00B4D8]"}
+        />
       </section>
     </div>
   );

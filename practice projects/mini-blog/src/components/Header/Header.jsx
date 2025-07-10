@@ -13,7 +13,7 @@ const Header = () => {
             MinimalBlog
           </NavLink>
 
-          {/* Navigation */}
+          {/* Nav bar */}
           <nav>
             <ul className="flex space-x-8">
               <li>
