@@ -37,19 +37,46 @@ Welcome to my React odyssey! This repository documents my comprehensive journey 
 
 ### 💎 Featured Projects
 
-| Project | Description | Live Demo | Code |
-|---------|-------------|-----------|------|
-| [Project 1]() | Recipe Riot | [Live]() | [Code]() |
-| [Project 2]() | Real-time chat application | [Live]() | [Code]() |
-| [Project 3]() | Interactive data dashboard | [Live]() | [Code]() |
+| Project       | Description                          | Live        | Code        |
+|---------------|--------------------------------------|-------------|-------------|
+| Recipe Riot   | API & Dynamic Routing, Search functionality | [View Live](https://recipe-riot-beta.vercel.app/) | [View Code](https://github.com/Horiyasiddique/Recipe-Riot-) |
+| Minimal Blog  | Dynamic routes      | [View Live](https://minimal-blog-ruddy.vercel.app/) | [View Code](https://github.com/Horiyasiddique/minimal-blog) |
+
 
 ### � Mini Projects
 
-| Project | Tech Used | Demo |
-|---------|-----------|------|
-| [Todo App]() | React Hooks | [Live]() |
-| [Weather App]() | API Integration | [Live]() |
-| [Recipe Finder]() | Context API | [Live]() |
+| Project       | Description                          |
+|---------------|--------------------------------------|
+| Todo App      | Hooks-based task management system   |
+| Password manager | usig useEffect, useState & useCallback |
+| Background changer | useSatate    |
+| Font changer | useState |
+| Calculator | Context API |
+| Counter | Context API |
+| Shopping Cart |Context API |
+| Login system | Context API |
+| Counter | Redux Toolkit |
+| Todo List | Redux Toolkit |
+| BMI Calculator | hooks |
+| Chars counter | hooks |
+| Cuntdown timer | hooks|
+| Multi language switcher | hooks |
+| Theme Switcher | Context API |
+
+## 📜 License
+
+[MIT](https://choosealicense.com/licenses/mit/)
+
+---
+
+<div align="center">
+  <h3>Connect with me</h3>
+  <p>
+    <a href="https://linkedin.com/in/hooriyasiddiqui" target="_blank"><img alt="LinkedIn" src="https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
+    <a href="mailto:hooriyakaleem06@gmail.com"><img alt="Email" src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" /></a>
+  </p>
+</div>
+
 
 ## 📈 Learning Path
 
@@ -61,3 +88,5 @@ graph TD
     D --> E[Performance]
     E --> F[Testing]
     F --> G[Advanced Patterns]
+
+
